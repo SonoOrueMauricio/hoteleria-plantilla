@@ -8,112 +8,213 @@
 <body>
 
     <!-- Encabezado -->
-    <header>
-        <div>
+    <header class="header">
+        <div class="logo">
             <strong>DEYAN</strong>
         </div>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <ul class="nav-list">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#habitaciones">Habitaciones</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#ubicanos">Ubícanos</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-        <div>
-            <a href="#reserva">Reserva</a>
-        </div>
     </header>
 
     <main>
         <!-- Sección Principal (Hero) -->
-        <section id="inicio">
-            <span>Deyan Comfort & Community.</span>
-            <h1>Aventuras que Unen Personas.</h1>
-            <p>Comodidad minimalista, hospitalidad genuina y conexiones profundas en el corazón del Perú.</p>
-            <a href="#habitaciones">Elegir Habitación →</a>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <span class="hero-tag">
+                    Deyan Comfort & Community.
+                </span>
+                <h1 class="hero-title">
+                    Aventuras que Unen Personas.
+                </h1>
+                <p class="hero-description">
+                    Comodidad minimalista, hospitalidad genuina y conexiones profundas en el corazón del Perú.
+                </p>
+            </div>
         </section>
 
         <!-- Sección de Habitaciones -->
-        <section id="habitaciones">
-            <h2>Nuestras Habitaciones.</h2>
+        <section id="habitaciones" class="rooms">
+            <h2>
+                Nuestras Habitaciones.
+            </h2>
             
-            <div>
-                <article>
+            <div class="rooms-grid">
+                <article class="room-card">
                     <img src="habitacion-suite.jpg" alt="Suite Atardecer">
-                    <h3>Suite Atardecer - Cama Matrimonial.</h3>
-                    <p>Vistas a la playa.</p>
+                    <h3>
+                        Suite Atardecer - Cama Matrimonial.
+                    </h3>
+                    <p>
+                        Vistas a la playa.
+                    </p>
                 </article>
 
-                <article>
+                <article class="room-card">
                     <img src="habitacion-basica.jpg" alt="Litera Viajero">
-                    <h3>Dormitorio basico.</h3>
-                    <p>Cortinas, luz, Agua, Televisor.</p>
+                    <h3>
+                        Dormitorio basico.
+                    </h3>
+                    <p>
+                        Cortinas, luz, Agua, Televisor.
+                    </p>
                 </article>
 
-                <article>
+                <article class="room-card">
                     <img src="habitacion-queen.jpg" alt="Habitación Terraza">
-                    <h3>Habitación Cama Queen.</h3>
-                    <p>Tu oasis personal.</p>
+                    <h3>
+                        Habitación Cama Queen.
+                    </h3>
+                    <p>
+                        Tu oasis personal.
+                    </p>
                 </article>
 
-                <article>
+                <article class="room-card">
                     <img src="habitacion-gemela.jpg" alt="Habitación Gemela">
-                    <h3>Habitación Gemela - Dos Camas.</h3>
-                    <p>Funcional y acogedor.</p>
+                    <h3>
+                        Habitación Gemela - Dos Camas.
+                    </h3>
+                    <p>
+                        Funcional y acogedor.
+                    </p>
                 </article>
             </div>
         </section>
 
         <!-- Sección de Extras (Bebidas) -->
-        <section id="servicios">
-            <h2>Agrega Extras a Tu Estancia.</h2>
+        <section id="servicios" class="services">
+            <h2>
+                Agrega Extras a Tu Estancia.
+            </h2>
             
-            <div>
-                <article>
+            <div class="services-grid">
+                <article class="service-card">
                     <img src="vino-reserva.jpg" alt="Vino Peruano Reserva">
-                    <h3>Vino Peruano Reserva.</h3>
-                    <p>Para una velada relajada.</p>
-                    <button type="button">+ Agregar</button>
+                    <h3>
+                        Vino Peruano Reserva.
+                    </h3>
+                    <p>
+                        Para una velada relajada.
+                    </p>
+                    <button type="button">
+                        + Agregar
+                    </button>
                 </article>
                 
                 <article>
                     <img src="whisky.jpg" alt="Whisky Clásico">
-                    <h3>Whisky Clásico.</h3>
-                    <p>Un toque de calor.</p>
-                    <button type="button">+ Agregar</button>
+                    <h3>
+                        Whisky Clásico.
+                    </h3>
+                    <p>
+                        Un toque de calor.
+                    </p>
+                    <button type="button">
+                        + Agregar
+                    </button>
                 </article>
 
                 <article>
                     <img src="four-loko.jpg" alt="Four Lokos Variados">
-                    <h3>Four Lokos Variados.</h3>
-                    <p>Para la vibra de la noche.</p>
-                    <button type="button">+ Agregar</button>
+                    <h3>
+                        Four Lokos Variados.
+                    </h3>
+                    <p>
+                        Para la vibra de la noche.
+                    </p>
+                    <button type="button">
+                        + Agregar
+                    </button>
                 </article>
 
                 <article>
                     <img src="agua-mineral.jpg" alt="Agua Mineral Local">
-                    <h3>Agua Mineral Local.</h3>
-                    <p>Mantente fresco.</p>
-                    <button type="button">+ Agregar</button>
+                    <h3>
+                        Agua Mineral Local.
+                    </h3>
+                    <p>
+                        Mantente fresco.
+                    </p>
+                    <button type="button">
+                        + Agregar
+                    </button>
                 </article>
             </div>
         </section>
         <!-- Ubicación del hotel -->
-        <section id="ubicanos">
-            <h2>Ubícanos</h2>
-            <div>
+        <section id="ubicanos" class="location">
+            <h2>
+                Ubícanos
+            </h2>
+            <div class="location-map">
                 <iframe src="https://maps.app.goo.gl/cEBo9yyk8PTN5Fvb6" width="200" height="200" loading="lazy"></iframe>
             </div>
-            <div>
+            <div class="location-image">
                 <img src="/proyecto_deyan/assets/images/galery/referencia.jpeg" alt="imagen referencia" width="200" height="200">
             </div>
+        </section>
+        <section id="reseñas" class="testimonials">
+            <h2>
+                Lo que dicen nuestros huéspedes
+            </h2>
+            <div class="testimonials-grid">
+                <article>
+                    <p>
+                        Excelente servicio y habitaciones muy cómodas.
+                    </p>
+                    <h4>
+                        Carlos M.
+                    </h4>
+                </article>
+            </div>
+            <div class="experiencia-card">
+                <h3>
+                    500+
+                </h3>
+                <p>
+                    Visitantes satisfechos
+                </p>
+            </div>
+            <div class="experiencia-card">
+                <h3>
+                    24/7
+                </h3>
+                <p>
+                    Atención continua
+                </p>
+            </div>
+            <div class="experiencia-card">
+                <h3>
+                    15+
+                </h3>
+                <p>
+                    Años de experiencia
+                </p>
+            </div>
+        </section>
+        <section id="contacto" class="contatc">
+            <h2>
+                Reserva tu próxima experiencia
+            </h2>
+            <p>
+                Estamos listos para recibirte.
+            </p>
         </section>
     </main>
 
     <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2026 Hostal Deyan | Perú | Reservas y atención las 24 hrs.</p>
+    <footer class="footer">
+        <p>
+            &copy; 2026 Hostal Deyan | Perú | Reservas y atención las 24 hrs.
+        </p>
     </footer>
 
 </body>
