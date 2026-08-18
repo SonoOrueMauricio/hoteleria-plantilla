@@ -1,0 +1,31 @@
+
+
+:root {
+    /* --- PALETA DE COLORES --- */
+    /* Colores base del diseño moderno y cálido */
+    --color-fondo-principal: #ebdccc; /* Color arena/beige para el fondo de la página */
+    --color-primario: #3b2b24;        /* Marrón oscuro elegante (botones, detalles) */
+    --color-secundario: #1a120e;      /* Marrón casi negro (para efectos hover) */
+    --color-blanco: #ffffff;
+
+    /* Colores de Texto */
+    --color-texto-principal: #2b201a; /* Marrón muy oscuro para mejor lectura que el negro puro */
+    --color-texto-claro: #6b7280;     /* Gris suave para descripciones y subtítulos */
+
+    /* Colores para Componentes (Tarjetas, Etiquetas) */
+    --color-fondo-tarjeta: #ffffff;
+    --color-fondo-tag: rgba(255, 255, 255, 0.6); /* Blanco semitransparente */
+    --color-borde: #e5e7eb;           /* Gris súper claro para bordes sutiles */
+
+    /* --- TIPOGRAFÍA --- */
+    /* Recuerda importar estas fuentes en tu HTML o en el main.css desde Google Fonts */
+    --fuente-titulos: 'Playfair Display', serif; /* Fuente elegante para los encabezados */
+    --fuente-textos: 'Inter', sans-serif;        /* Fuente limpia y minimalista para los párrafos */
+
+    /* --- ESPACIADOS Y TAMAÑOS --- */
+    /* Estas variables te servirán mucho cuando hagas el layout.css */
+    --ancho-maximo-contenedor: 1200px;
+    --espaciado-seccion-vertical: 80px; 
+    --radio-borde-tarjetas: 16px;
+    --radio-borde-botones: 8px;
+}
