@@ -1,0 +1,62 @@
+/* Elimina márgenes y paddings por defecto */
+* {
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Redireccionamiento suave al dar click a los menús */
+html {
+    scroll-behavior: smooth;
+}
+/* Altura mínima de la página */
+body {
+    min-height: 100vh;
+}
+/* Imágenes no se deforman */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* Eliminar estilos de listas */
+u,
+ol {
+    list-style: none;
+}
+/* Eliminar estilos de enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Eliminar estilos de botones */
+button{
+    border: none;
+    background: none;
+    font: inherit;
+}
+/* Eliminar estilos de inputs y formularios */
+input,
+textarea,
+select,
+button {
+    font: inherit;
+}
+/* Evita que el texto se desborde de su contenedor */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    overflow-wrap: break-word;
+}
+/* Evita que las tablas se vuelvan a dibujar entre las celdas y elimina el espaciado de la celda */
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+iframe{
+    border: 0;
+    max-width: 100%;
+}
