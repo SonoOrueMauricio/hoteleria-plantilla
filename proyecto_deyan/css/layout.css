@@ -1,0 +1,107 @@
+/* Contenedor general */
+.container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem 5%;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+}
+.navbar .nav-list{
+    list-style: none;
+    align-items: center;
+    
+    display: flex;
+    gap: 2rem;
+}
+/* Secciones Generales */
+section {
+    padding: 5rem 5%;
+}
+/* Hero */
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+.hero-content {
+    max-width: 800px;
+}
+.hero-title {
+    margin: 1rem 0;
+}
+.hero-description {
+    max-width: 650px;
+    margin: 0 auto 2rem;
+}
+/* Habitaciones */
+.rooms-grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+/* Servicios */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+/* Ubicación */
+.location {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+.location-map,
+.location-image {
+    width: 100%;
+    
+}
+/* Testimonios */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+/* Contacto */
+.contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+/* Footer */
+.footer {
+    padding: 2rem 5%;
+    text-align: center;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .header{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .location {
+        grid-template-columns: 1fr;
+    }
+}

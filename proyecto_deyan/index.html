@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hostal Deyan | Aventuras que Unen Personas</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/components.css"
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
 
@@ -44,56 +45,58 @@
 
         <!-- Sección de Habitaciones -->
         <section id="habitaciones" class="rooms">
-            <h2>
-                Nuestras Habitaciones.
-            </h2>
-            
-            <div class="rooms-grid">
-                <article class="room-card">
-                    <img src="habitacion-suite.jpg" alt="Suite Atardecer">
-                    <h3>
-                        Suite Atardecer - Cama Matrimonial.
-                    </h3>
-                    <p>
-                        Vistas a la playa.
-                    </p>
-                </article>
+            <div class="container">
+                <h2 class="section-title">
+                    Nuestras Habitaciones.
+                </h2>
+                
+                <div class="rooms-grid">
+                    <article class="room-card">
+                        <img src="habitacion-suite.jpg" alt="Suite Atardecer">
+                        <h3>
+                            Suite Atardecer - Cama Matrimonial.
+                        </h3>
+                        <p>
+                            Vistas a la playa.
+                        </p>
+                    </article>
 
-                <article class="room-card">
-                    <img src="habitacion-basica.jpg" alt="Litera Viajero">
-                    <h3>
-                        Dormitorio basico.
-                    </h3>
-                    <p>
-                        Cortinas, luz, Agua, Televisor.
-                    </p>
-                </article>
+                    <article class="room-card">
+                        <img src="habitacion-basica.jpg" alt="Litera Viajero">
+                        <h3>
+                            Dormitorio basico.
+                        </h3>
+                        <p>
+                            Cortinas, luz, Agua, Televisor.
+                        </p>
+                    </article>
 
-                <article class="room-card">
-                    <img src="habitacion-queen.jpg" alt="Habitación Terraza">
-                    <h3>
-                        Habitación Cama Queen.
-                    </h3>
-                    <p>
-                        Tu oasis personal.
-                    </p>
-                </article>
+                    <article class="room-card">
+                        <img src="habitacion-queen.jpg" alt="Habitación Terraza">
+                        <h3>
+                            Habitación Cama Queen.
+                        </h3>
+                        <p>
+                            Tu oasis personal.
+                        </p>
+                    </article>
 
-                <article class="room-card">
-                    <img src="habitacion-gemela.jpg" alt="Habitación Gemela">
-                    <h3>
-                        Habitación Gemela - Dos Camas.
-                    </h3>
-                    <p>
-                        Funcional y acogedor.
-                    </p>
-                </article>
+                    <article class="room-card">
+                        <img src="habitacion-gemela.jpg" alt="Habitación Gemela">
+                        <h3>
+                            Habitación Gemela - Dos Camas.
+                        </h3>
+                        <p>
+                            Funcional y acogedor.
+                        </p>
+                    </article>
+                </div>
             </div>
         </section>
 
         <!-- Sección de Extras (Bebidas) -->
         <section id="servicios" class="services">
-            <h2>
+            <h2 class="section-title">
                 Agrega Extras a Tu Estancia.
             </h2>
             
@@ -111,7 +114,7 @@
                     </button>
                 </article>
                 
-                <article>
+                <article class="service-card">
                     <img src="whisky.jpg" alt="Whisky Clásico">
                     <h3>
                         Whisky Clásico.
@@ -124,7 +127,7 @@
                     </button>
                 </article>
 
-                <article>
+                <article class="service-card">
                     <img src="four-loko.jpg" alt="Four Lokos Variados">
                     <h3>
                         Four Lokos Variados.
@@ -137,7 +140,7 @@
                     </button>
                 </article>
 
-                <article>
+                <article class="service-card">
                     <img src="agua-mineral.jpg" alt="Agua Mineral Local">
                     <h3>
                         Agua Mineral Local.
@@ -153,18 +156,18 @@
         </section>
         <!-- Ubicación del hotel -->
         <section id="ubicanos" class="location">
-            <h2>
+            <h2 class="section-title">
                 Ubícanos
             </h2>
             <div class="location-map">
-                <iframe src="https://maps.app.goo.gl/cEBo9yyk8PTN5Fvb6" width="200" height="200" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.775695181827!2d-77.1354104!3d-11.850968499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d50035b00de9%3A0x39fb07db28cad74b!2sHotel%20DEYAN!5e0!3m2!1ses-419!2spe!4v1787081584194!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
             <div class="location-image">
                 <img src="/proyecto_deyan/assets/images/galery/referencia.jpeg" alt="imagen referencia" width="200" height="200">
             </div>
         </section>
         <section id="reseñas" class="testimonials">
-            <h2>
+            <h2 class="section-title">
                 Lo que dicen nuestros huéspedes
             </h2>
             <div class="testimonials-grid">
@@ -202,8 +205,8 @@
                 </p>
             </div>
         </section>
-        <section id="contacto" class="contatc">
-            <h2>
+        <section id="contacto" class="contact">
+            <h2 class="section-title">
                 Reserva tu próxima experiencia
             </h2>
             <p>

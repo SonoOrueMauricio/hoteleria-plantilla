@@ -19,7 +19,7 @@ img {
     height: auto;
 }
 /* Eliminar estilos de listas */
-u,
+ul,
 ol {
     list-style: none;
 }
