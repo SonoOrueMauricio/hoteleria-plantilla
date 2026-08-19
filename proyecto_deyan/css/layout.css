@@ -21,12 +21,23 @@
     display: flex;
     gap: 2rem;
 }
+.logo {
+    background-image: url("../assets/logo/logo.png");
+    background-size:contain ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* Secciones Generales */
 section {
     padding: 5rem 5%;
 }
 /* Hero */
 .hero {
+    background-image: url("../assets/images/hero/hero.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
     min-height: 100vh;
 
     display: flex;
