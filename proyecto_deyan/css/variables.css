@@ -1,19 +1,19 @@
-
 :root {
     /* --- PALETA DE COLORES --- */
-    --color-fondo-principal: #ebdccc; 
-    --color-primario: #3b2b24;        
-    --color-secundario: #1a120e;      
+    --color-fondo-principal: #f5f3f0;
+    --color-primario: #8b8878;        
+    --color-secundario: #737063;      
     --color-blanco: #ffffff;
     
     /* Colores de Texto */
-    --color-texto-principal: #2b201a; 
-    --color-texto-claro: #6b7280;     
+    --color-texto-principal: #33322e; 
+    --color-texto-claro: #6b6965;     
+    --color-texto-hero: #ffffff;      /* Para que se lea claro sobre la foto */
 
     /* Colores para Componentes */
     --color-fondo-tarjeta: #ffffff;
-    --color-fondo-tag: rgba(255, 255, 255, 0.6); 
-    --color-borde: #e5e7eb;           
+    --color-fondo-tag: rgba(255, 255, 255, 0.85); 
+    --color-borde: #dcd9d4;           
     --color-gris-imagen: #e5e7eb;
 
     /* --- TIPOGRAFÍA --- */
