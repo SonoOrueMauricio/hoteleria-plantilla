@@ -1,4 +1,3 @@
-
 /* --- 1. BOTONES --- */
 .btn-primary {
     background-color: var(--color-primario); 
@@ -128,4 +127,37 @@
     font-weight: 600;
     text-align: right;
     color: var(--color-texto-principal);
+}
+
+/* --- 6. TEXTOS DEL HERO --- */
+.hero-title {
+    font-family: var(--fuente-titulos);
+    font-size: 3rem;
+    color: var(--color-texto-hero, #ffffff); /* Llama al color blanco */
+    margin: 16px 0;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Sombra para resaltar sobre la foto */
+}
+
+.hero-description {
+    font-family: var(--fuente-textos);
+    font-size: 1.1rem;
+    color: var(--color-texto-hero, #ffffff); /* Llama al color blanco */
+    margin: 0 auto 24px;
+    opacity: 0.95;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    
+}
+/* --- 7. MAPA DE UBICACIÓN --- */
+.location-map iframe {
+    width: 100%;       /* Sobrescribe el width="200" del HTML */
+    height: 400px;     /* Le da un tamaño mucho más presentable */
+    border: none;      /* Quita el borde gris feo que trae por defecto */
+    border-radius: var(--radio-borde-tarjetas); 
+    box-shadow: var(--sombra-tarjeta);
+    transition: box-shadow 0.3s ease;
+}
+
+.location-map iframe:hover {
+    box-shadow: var(--sombra-tarjeta-hover);
 }
