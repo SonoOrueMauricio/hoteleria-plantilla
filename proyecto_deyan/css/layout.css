@@ -33,6 +33,7 @@
 section {
     padding: 5rem 5%;
 }
+
 /* Habitaciones */
 .rooms-grid {
     display: grid;
@@ -80,6 +81,17 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    background-image: linear-gradient(rgba(40, 45, 48, 0.85), rgba(40, 45, 48, 0.85)), url("../assets/images/hero/hero.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff; 
+}
+
+/* Fuerza el color blanco usando el ID para que nada lo bloquee */
+#contacto h2,
+#contacto p {
+    color: #ffffff !important;
 }
 
 /* Footer */
