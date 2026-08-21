@@ -6,27 +6,39 @@
 
 /* Header */
 .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
-    top: 0;
-    position: sticky;
+    background-color: var(--color-fondo-principal);
+    padding: 25px 50px;
+    transition: all .4s ease;
     z-index: 1000;
 }
-
 .navbar .nav-list{
     list-style: none;
     align-items: center;
     display: flex;
     gap: 2rem;
 }
-
+.header-scrolled {
+    padding: 0.8rem 5%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-size:  1rem;
+}
 .logo {
     width: 50px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    font-size: 1rem;
+    transition: all 0.3s ease;
 }
 
 /* Secciones Generales */
@@ -99,4 +111,19 @@ section {
         flex-wrap: wrap;
         justify-content: center;
     }
+}
+@media (max-width: 768px){
+
+    #inicio,
+    #habitaciones,
+    #servicios,
+    #ubicanos,
+    #reseñas,
+    #contacto,
+    #experiencia {
+
+        scroll-margin-top: 140px;
+
+    }
+
 }

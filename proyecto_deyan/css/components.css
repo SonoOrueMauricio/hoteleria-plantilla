@@ -8,6 +8,9 @@
     width: 100%; 
     display: inline-block;
     text-align: center;
+    margin: 0 auto;
+    border-radius: var(--radio-borde-botones);
+    cursor: pointer;
 }
 
 /* --- 2. ETIQUETAS (BADGES/TAGS) --- */
@@ -71,7 +74,17 @@
     text-align: center;
     flex-grow: 1; 
 }
-
+.btn-room.selected-room {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
+.selected,
+.selected-room {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
 /* --- 4. TARJETAS DE ESTADÍSTICAS (EXPERIENCIA) --- */
 .experiencia-card {
     background-color: var(--color-fondo-tarjeta);

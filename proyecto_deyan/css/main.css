@@ -180,8 +180,3 @@ body{
     color: #ffffff;
     border-color: var(--color-secundario);
 }
-.btn-room:active {
-    background-color: var(--color-fondo-principal);
-    transform: scale(0.95);
-    transform: translateY(2px);
-}

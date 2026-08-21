@@ -7,6 +7,7 @@
 /* Redireccionamiento suave al dar click a los menús */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 /* Altura mínima de la página */
 body {

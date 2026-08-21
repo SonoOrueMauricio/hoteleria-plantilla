@@ -1,11 +1,19 @@
 let habitacionSeleccionada = "";
 let extrasSeleccionados = [];
+
 const roomButtons = document.querySelectorAll(".btn-room");
 roomButtons.forEach(button => {
     button.addEventListener("click", () => {
         habitacionSeleccionada = button.dataset.room;
+
+        roomButtons.forEach(btn => {
+            btn.classList.remove("selected-room");
+        })
+        button.classList.add("selected-room");
+        actualizarResumen();
     })
-})
+});
+
 const extrasButtons = document.querySelectorAll(".btn-extra");
 extrasButtons.forEach(button => {
     button.addEventListener("click", () => {
@@ -18,6 +26,7 @@ extrasButtons.forEach(button => {
             extrasSeleccionados.push(extra);
             button.classList.add("selected");
         }
+        actualizarResumen();
     });
 });
 const whatsappButton = document.querySelector("#btn-whatsapp");
@@ -32,3 +41,11 @@ whatsappButton.addEventListener("click", (e) => {
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
     window.open(url, "_blank");
 });
+
+function actualizarResumen() {
+    const resumen = document.querySelector("#resumen-reserva");
+    resumen.innerHTML = `
+    <strong>Habitación: </strong>${habitacionSeleccionada || "Ninguna"}
+    <br>
+    <strong>Extras: </strong>${extrasSeleccionados.join(", ") ||"Ninguno"}`;
+};
