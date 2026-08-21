@@ -1,23 +1,13 @@
 /* --- 1. BOTONES --- */
-.btn-primary {
-    background-color: var(--color-primario); 
-    color: var(--color-blanco);
+.btn-extra {
     border: none;
     padding: 10px 24px;
-    border-radius: var(--radio-borde-botones); 
-    font-family: var(--fuente-textos);
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
     width: 100%; 
     display: inline-block;
     text-align: center;
-}
-
-.btn-primary:hover {
-    background-color: var(--color-secundario);
-    transform: translateY(-2px); 
 }
 
 /* --- 2. ETIQUETAS (BADGES/TAGS) --- */
@@ -153,7 +143,6 @@
     width: 100%;       /* Sobrescribe el width="200" del HTML */
     height: 400px;     /* Le da un tamaño mucho más presentable */
     border: none;      /* Quita el borde gris feo que trae por defecto */
-    border-radius: var(--radio-borde-tarjetas); 
     box-shadow: var(--sombra-tarjeta);
     transition: box-shadow 0.3s ease;
 }

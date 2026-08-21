@@ -1,6 +1,6 @@
 :root {
     /* --- PALETA DE COLORES --- */
-    --color-fondo-principal: #f5f3f0;
+    --color-fondo-principal: #fdf5ea;
     --color-primario: #8b8878;        
     --color-secundario: #737063;      
     --color-blanco: #ffffff;
@@ -13,7 +13,7 @@
     /* Colores para Componentes */
     --color-fondo-tarjeta: #ffffff;
     --color-fondo-tag: rgba(255, 255, 255, 0.85); 
-    --color-borde: #dcd9d4;           
+    --color-borde: 1px solid #e0e0e0;           
     --color-gris-imagen: #e5e7eb;
 
     /* --- TIPOGRAFÍA --- */
@@ -21,8 +21,11 @@
     --fuente-textos: 'Inter', sans-serif;        
 
     /* --- ESPACIADOS Y TAMAÑOS --- */
-    --radio-borde-tarjetas: 16px;
+    --radio-borde-tarjetas: 6px;
     --radio-borde-botones: 8px;
     --sombra-tarjeta: 0 4px 6px rgba(0, 0, 0, 0.05);
     --sombra-tarjeta-hover: 0 10px 20px rgba(0, 0, 0, 0.1);
+    --container-max-width: 1200px;
+    --section-padding: 5rem;
+    --tansition-default: 0.3s ease;
 }
