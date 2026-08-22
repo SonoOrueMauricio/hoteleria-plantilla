@@ -49,3 +49,31 @@ function actualizarResumen() {
     <br>
     <strong>Extras: </strong>${extrasSeleccionados.join(", ") ||"Ninguno"}`;
 };
+
+const roomImages =
+    document.querySelectorAll(".room-image-container");
+
+
+roomImages.forEach(room => {
+    room.addEventListener("click", (e) => {
+        if (window.innerWidth <= 768) {
+            e.stopPropagation();
+            const estaAbierta =
+                room.classList.contains("show-overlay");
+            roomImages.forEach(item =>
+                item.classList.remove("show-overlay")
+            );
+            if (!estaAbierta) {
+                room.classList.add("show-overlay");
+            }
+        }
+    });
+});
+
+document.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+        roomImages.forEach(room =>
+            room.classList.remove("show-overlay")
+        );
+    }
+});

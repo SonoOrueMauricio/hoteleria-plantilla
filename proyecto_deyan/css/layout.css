@@ -125,7 +125,6 @@ section {
     }
 }
 @media (max-width: 768px){
-
     #inicio,
     #habitaciones,
     #servicios,
@@ -133,9 +132,41 @@ section {
     #reseñas,
     #contacto,
     #experiencia {
-
         scroll-margin-top: 140px;
-
     }
-
+}
+.room-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radio-borde-tarjetas);
+}
+.room-image-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform .4s ease;
+}
+.room-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(200, 163, 83, 0.75);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: opacity .4s ease;
+    pointer-events: none;
+}
+.room-image-container:hover .room-overlay {
+    opacity: 1;
+}
+.room-image-container:hover img {
+    transform: scale(1.05);
+}
+.room-image-container.show-overlay .room-overlay {
+    opacity: 1;
 }

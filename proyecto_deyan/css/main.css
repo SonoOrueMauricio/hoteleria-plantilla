@@ -140,6 +140,7 @@ body{
     padding:10px 20px; 
     border-radius:var(--radio-borde-botones); 
     text-align:center; 
+    align-items: center;
     text-decoration:none; 
     font-size:16px;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -184,4 +185,14 @@ body{
     transform: scale(1.05);
     color: #ffffff;
     border-color: var(--color-secundario);
+}
+.texto-precio {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-style: italic;
+}
+.descripcion-room, .descripcion-room>h3 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-texto-principal);
+    font-weight: bold;
 }

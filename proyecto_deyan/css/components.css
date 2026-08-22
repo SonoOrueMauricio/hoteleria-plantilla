@@ -11,6 +11,13 @@
     margin: 0 auto;
     border-radius: var(--radio-borde-botones);
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.btn-extra:hover{
+    background-color: var(--color-primario);
+    transform: scale(1.05);
+    color: #ffffff;
+    border-color: var(--color-secundario);
 }
 
 /* --- 2. ETIQUETAS (BADGES/TAGS) --- */
